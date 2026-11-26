@@ -64,9 +64,9 @@ plt.scatter(
     label='Центры кластеров'
 )
 
-plt.xlabel('Annual Income')
-plt.ylabel('Spending Score')
-plt.title('Кластеризация покупателей')
+plt.xlabel('X1')
+plt.ylabel('X2')
+plt.title('Кластеризация')
 plt.legend()
 
 plt.show()
@@ -78,7 +78,7 @@ unique, counts = np.unique(
 )
 
 for cluster, count in zip(unique, counts):
-    print(f'Кластер {cluster}: {count} покупателей')
+    print(f'Кластер {cluster}: {count} штук')
 
 inertia = []
 
